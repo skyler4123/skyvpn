@@ -5,7 +5,9 @@ services:
     container_name: wg-easy
     environment:
       # Required: Your VPS Public IP or a Domain Name
-      - WG_HOST=1.2.3.4 
+      # - WG_HOST=1.2.3.4
+      - WG_HOST=152.42.166.46
+
       # Optional: Web UI Password (highly recommended)
       - PASSWORD=YourSecurePasswordHere
       # Optional: DNS for clients (e.g., Google or AdGuard)
