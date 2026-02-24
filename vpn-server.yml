@@ -4,7 +4,7 @@ services:
     image: ghcr.io/wg-easy/wg-easy:13 # Using v13 allows plain-text passwords
     container_name: wg-easy
     environment:
-      - WG_HOST=YOUR_VPS_IP_HERE
+      - WG_HOST=152.42.166.46
       - PASSWORD=YourSecretPassword
       - WG_DEFAULT_DNS=1.1.1.1
     ports:
