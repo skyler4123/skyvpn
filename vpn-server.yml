@@ -23,9 +23,11 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
+        delay: 5s          # Wait 5 seconds between restarts
+        max_attempts: 2    # Stop trying after 2 failed starts
+        window: 120s       # The period to decide if a restart was successful
       resources:
         limits:
           memory: 256M
-
 volumes:
   wg_data:
